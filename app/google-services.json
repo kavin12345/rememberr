@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90040177106",
+    "firebase_url": "https://rememberr-ae71d.firebaseio.com",
+    "project_id": "rememberr-ae71d",
+    "storage_bucket": "rememberr-ae71d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90040177106:android:bc99e95684b0de0b",
+        "android_client_info": {
+          "package_name": "mrgoky.rememberr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90040177106-n40c6qgqherij055br7k90blbpmjgn36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTN_LTus7f1X7B-1w8MU_97yqXRnags9U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
