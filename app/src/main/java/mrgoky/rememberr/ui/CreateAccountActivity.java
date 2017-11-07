@@ -9,33 +9,42 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mrgoky.rememberr.R;
+import mrgoky.rememberr.vm.CreateAccountViewModel;
 
 public class CreateAccountActivity extends Activity {
 
 	@BindView(R.id.new_name)
-	EditText editName;
+	public EditText editName;
 
 	@BindView(R.id.new_email)
-	EditText editEmail;
+	public EditText editEmail;
 
 	@BindView(R.id.confirm_email)
-	EditText confirmEmail;
+	public EditText confirmEmail;
 
 	@BindView(R.id.create_password)
-	EditText editPassword;
+	public EditText editPassword;
 
 	@BindView(R.id.confirm_password)
-	EditText confirmPassword;
+	public EditText confirmPassword;
 
 	@OnClick(R.id.sign_up_button)
 	void signUp() {
 		// TODO: Sign up functionality
 	}
 
+	public CreateAccountViewModel viewModel;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_account);
 		ButterKnife.bind(this);
+
+		viewModel = new CreateAccountViewModel();
+	}
+
+	public void validateEmail() {
+		viewModel.getValidateEmailSubscriber().onNext(editEmail.getText().toString());
 	}
 }
